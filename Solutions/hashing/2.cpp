@@ -1,18 +1,18 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
 int main()
 {
     int n;
     cin >> n;
     unordered_map<string, int> mp;
-    for(int i = 0; i < n; i++)
+    for (int i = 0; i < n; i++)
     {
         string str;
         cin >> str;
-        if(mp.find(str) != mp.end())
+        if (mp.find(str) != mp.end())
         {
             mp[str]++;
-            cout << str << mp[str]-1 << '\n';
+            cout << str << mp[str] - 1 << '\n';
         }
         else
         {

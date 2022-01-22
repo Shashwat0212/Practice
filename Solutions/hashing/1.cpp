@@ -1,4 +1,4 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
 int main()
 {
@@ -9,14 +9,14 @@ int main()
 	int arr[256];
 	memset(arr, 0, sizeof(arr));
 	int mx = INT_MIN;
-	for(int i = 0; i < n; i++)
+	for (int i = 0; i < n; i++)
 	{
 		arr[s[i]]++;
 		mx = max(mx, arr[s[i]]);
 	}
-	for(int i = 0; i < 256; i++)
+	for (int i = 0; i < 256; i++)
 	{
-		if(arr[i] == mx)
+		if (arr[i] == mx)
 		{
 			cout << char(i) << ' ' << mx << '\n';
 			break;

@@ -1,4 +1,4 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
 #define c(x) cout << x;
 int main()
@@ -6,18 +6,18 @@ int main()
     int t;
     cin >> t;
     // c(t);
-    while(t--)
+    while (t--)
     {
         int n;
         cin >> n;
         // c(n);
         long long count = 0;
-        for(int i = 0; i < n; i++)
+        for (int i = 0; i < n; i++)
         {
             long long x;
             cin >> x;
             // c(x);
-            if(x != -1)
+            if (x != -1)
             {
                 count += x;
                 cout << x << ' ';
